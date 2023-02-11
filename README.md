@@ -1,0 +1,1 @@
+This is my university project for the subject Technologies for WEB Publishing I. This project contains 5 static pages and images for them. Also, a CSS file is connected to these files and Javascript is used for animations.
