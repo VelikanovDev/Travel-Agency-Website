@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Průvodce</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        <script src="https://use.fontawesome.com/ae4553dc22.js"></script> <!-- Icons-->
+
+    </head>
+<body>
+    <!-- header -->
+    <header class="header" style="background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/header-bg/pruvodce-bg.jpg)">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">ÚVOD</a></li>
+                    <li><a href="zajezdy.html">ZÁJEZDY</a></li>
+                    <li><a href="pruvodce.html">NAŠI PRŮVODCE</a></li>
+                    <li><a href="fotogalerie.html">FOTOGALERIE</a></li>
+                    <li><a href="kontakt.html">KONTAKT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    
+        <div class="text-box">
+            <h1>NAŠI PRŮVODCE</h1>
+            <p style="color:white">Dobrý průvodce je nutnou podmínkou skvělých zážitků z vaší dovolené.</p>
+            <a href="kontakt.html" class="ctc-btn">Navštivte nás</a>
+
+        </div>
+
+    </header>
+
+    <!-- pruvodce -->
+    <section class="pruvodce">
+        <h2>Pojďme se seznámit</h2>
+        <p>Všechny poznávací zájezdy CK India Tour do Indie a Nepalu jsou v doprovodu profesionálního českého průvodce, který je našim klientům k dispozici na všech šesti kontinentech 24 hodin denně.</p>
+        
+        <div class="row">
+            <div class="pruvodce-col">
+                <img src="img/pruvodce/pr1.jpg" alt="1">
+                <h3>Erik Novák</h3>
+                <p>Erik je absolventem bakalářského oboru Management cestovního ruchu a cestování je jeho největší zálibou. K němu se dostal, když po maturitě jel pracovat na léto na farmu do Skotska, další rok jel stopem do Rakouska a procestoval národní parky Černé Hory. V průběhu studia se zúčastnil studijního pobytu na Taiwanu a procestoval Kambodžu, Laos, Thajsko, či část Číny. O rok později navštívil Severní Indii a ušel trek okolo Annapuren v Nepálu.</p>
+            </div>
+            <div class="pruvodce-col">
+                <img src="img/pruvodce/pr2.jpg" alt="2">
+                <h3>Kateřina Novotná</h3>
+                <p>Kateřina pochází z Vrchlabí a cestování je její celoživotní vášeň. V 16ti odjela na studijní pobyt do USA a domů se vrátila pouze dostudovat a dodělat státnici z angličtiny. Následovalo několikaměsíční putování stopem po Evropě, sólo dobrodružství v Indii, s dodávkou projela napříč Austrálií a 7 let strávila ve Skotsku. Protože miluje slunce, teplo a exotiku, každou zimu si zpestřuje návštěvou slunných destinací. V posledních letech ji učarovala Srí Lanka, kam se pravidelně vrací a ráda vás touto zemí provede.</p>
+            </div>
+            <div class="pruvodce-col">
+                <img src="img/pruvodce/pr3.jpg" alt="3">
+                <h3>Josef Dvořák</h3>
+                <p>Poprvé vyrazil do světa v roce 1993, kdy projel stopem celou Evropu. Následoval Izrael, Jordánsko, Egypt a v roce 1996 odjel sám po zemi přes Turecko, Írán, Pákistán do Indie a Nepálu. Tato roční Cesta na Východ úplně změnila jeho pohled na svět a cestování se stalo osudem. Začal průvodcovat přechody rumunských hor pro Kudrnu, další zkušenosti získal na zájezdech Adventury. Stále aktivně cestuje, připravuje nové zájezdy, chodí po horách, jezdí na kole a plaví se na lodi po řekách a kanálech.</p>
+            </div>
+    
+        </div>
+    </section>
+
+    <!-- Click to Contakt (ctc)-->
+    <section class="ctc">
+        <h2>Už se těšíte na dovolenou?</h2>
+        <a href="kontakt.html" class="ctc-btn">Kontaktujte nás</a>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <h4>India Tour Company</h4>
+        <p>"Kořenem všeho zla je nedostatek poznání." (Buddha) </p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Vytvořeno jako zápočtový projekt v rámci předmětu TNPW1 © Aleksei Velikanov 2022</p>
+    </footer>
+
+    <!-- Menu for mobile devices -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+    
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+    
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    
+    </script>
+</body>
+</html>

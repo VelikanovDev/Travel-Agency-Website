@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Kontakt</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        <script src="https://use.fontawesome.com/ae4553dc22.js"></script> <!-- Icons-->
+
+    </head>
+<body>
+    <header class="header" style="background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/header-bg/kontakty-bg.jpg)">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">ÚVOD</a></li>
+                    <li><a href="zajezdy.html">ZÁJEZDY</a></li>
+                    <li><a href="pruvodce.html">NAŠI PRŮVODCE</a></li>
+                    <li><a href="fotogalerie.html">FOTOGALERIE</a></li>
+                    <li><a href="kontakt.html">KONTAKT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    
+    <div class="text-box">
+        <h1>KONTAKT</h1>
+    </div>
+    </header>
+
+    <section class="kontaktujte-nas">
+        <div class="row" id="kontaktForm">
+            <div class="kontakt-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Palachova 1129, Hradec Králové</h5>
+                        <p>Česká republika</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+420 777 777 777</h5>
+                        <p>Na telefonu jsme k dispozici od pondělí od pátku 8:00 - 17:00.</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>info@ck.cz</h5>
+                        <p>Kontaktovat nás můžete i e-mailem.</p>
+                    </span>
+                </div>
+            </div>
+            <div class="kontakt-col">
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Jméno" required>
+                    <label for="email">Name:</label>
+                    <input type="email" id="email" placeholder="E-mail" required>
+                    <label for="subject">Name:</label>
+                    <input type="text" id="subject" placeholder="S čím Vám můžeme pomoci" required>
+                    <label for="message">Name:</label>
+                    <textarea rows="10" id="message" placeholder="Zpráva" required></textarea>
+                    <!-- <button type="submit" class="ctc-btn ctc-btn-orange" onclick="sendForm()">Odeslat</button> -->
+                    <button onclick="alert('Děkujeme vám! Brzy vás budeme kontaktovat.');return true;" class="ctc-btn ctc-btn-orange" type="submit">Odeslat</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- map -->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1513.6350425404366!2d15.843708571185507!3d50.190402644105504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470dd4ba3413e28f%3A0x6c673752bc62be76!2sPalach%20dormitory%20of%20the%20University%20of%20Hradec%20Kralove!5e0!3m2!1sen!2scz!4v1666278013282!5m2!1sen!2scz" width="100px" height="700px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <h4>India Tour Company</h4>
+        <p>"Kořenem všeho zla je nedostatek poznání." (Buddha) </p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Vytvořeno jako zápočtový projekt v rámci předmětu TNPW1 © Aleksei Velikanov 2022</p>
+    </footer>
+
+
+    <!-- Menu for mobile devices and the form sending button-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+    
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+    
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+        
+        function sendForm() {
+            kontaktForm.style.display = "none";
+        }
+    </script>
+</body>
+</html>

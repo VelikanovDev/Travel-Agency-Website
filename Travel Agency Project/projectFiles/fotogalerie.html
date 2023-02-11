@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Fotogalerie</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        <script src="https://use.fontawesome.com/ae4553dc22.js"></script> <!-- Icons-->
+
+    </head>
+<body>
+    <header class="header" style="background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/header-bg/foto-bg.jpeg)">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">ÚVOD</a></li>
+                    <li><a href="zajezdy.html">ZÁJEZDY</a></li>
+                    <li><a href="pruvodce.html">NAŠI PRŮVODCE</a></li>
+                    <li><a href="fotogalerie.html">FOTOGALERIE</a></li>
+                    <li><a href="kontakt.html">KONTAKT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    
+    <div class="text-box">
+        <h1>FOTOGALERIE</h1>
+        <a href="kontakt.html" class="ctc-btn">Navštivte nás</a>
+    </div>
+    </header>
+
+
+    <section class="fotogalerie">
+        <div class="fotky">
+            <img src="img/fotogalerie/pexels-aneesh-ans-1211968.jpg" alt="1">
+            <img src="img/fotogalerie/pexels-flashing-moment-797824.jpg" alt="2">
+            <img src="img/fotogalerie/pexels-ishay-botbol-1304154.jpg" alt="3">
+            <img src="img/fotogalerie/pexels-neosiam-618116.jpg" alt="4">
+            <img src="img/fotogalerie/pexels-parij-photography-3070333.jpg" alt="5">
+            <img src="img/fotogalerie/pexels-prakasam-r-774282.jpg" alt="6">
+            <img src="img/fotogalerie/pexels-ritesh-arya-3079978.jpg" alt="7">
+            <img src="img/fotogalerie/pexels-vraj-shah-1721637.jpg" alt="8">
+            <img src="img/fotogalerie/pexels-yogendra-singh-1630786.jpg" alt="9">
+            <img src="img/fotogalerie/pexels-🇮🇳amol-nandiwadekar-1707402.jpg" alt="10">
+        </div>
+    </section>
+
+    <!-- Click to Contakt (ctc)-->
+    <section class="ctc">
+        <h2>Už se těšíte na dovolenou?</h2>
+        <a href="kontakt.html" class="ctc-btn">Kontaktujte nás</a>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <h4>India Tour Company</h4>
+        <p>"Kořenem všeho zla je nedostatek poznání." (Buddha) </p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Vytvořeno jako zápočtový projekt v rámci předmětu TNPW1 © Aleksei Velikanov 2022</p>
+    </footer>
+
+    <!-- Menu for mobile devices -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+    
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+    
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    
+    </script>
+</body>
+</html>
